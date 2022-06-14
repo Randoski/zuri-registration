@@ -1,0 +1,172 @@
+:root {
+    --pry-color: hsl(0, 100%, 74%);
+    --pry-text: white;
+    --btn-color: hsl(154, 59%, 51%);
+    --accent-color: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);   
+    --grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 96px;
+    background: var(--pry-color);  
+    color: var(--pry-text);
+}
+
+.container {
+    margin: 0 5%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.body-text {
+    margin: 24px 0 52px;
+    line-height: 1.5;
+}
+
+.trial {
+    background: var(--accent-color);
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.trial:hover {
+    background: var(--grayish-Blue);
+
+}
+
+.sec-trial-btn {
+    text-decoration: none;
+    color: var(--pry-text);
+    text-align: center;
+    line-height: 1.5;
+    width: 300px;
+}
+
+.sec-trial-btn span {
+    font-weight: bold;
+}
+
+form {
+    background: var(--pry-text);
+    border-radius: 4px;
+    margin: 24px 0;
+    padding: 24px 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 24px; */
+}
+
+.input-container img {
+    width: 24px;
+}
+
+input {
+    width: 90%;
+    /* margin: 0 5%; */
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid var(--grayish-Blue);
+    border-radius: 4px;
+    font-weight: bold; 
+}
+
+input[type=submit] {
+    background: var(--btn-color);
+    color: var(--pry-text);
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: var(--accent-color);
+}
+
+small {
+    color: var(--pry-color);
+}
+
+.caveat {
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    padding: 0 30px;
+    color: var(--dark-blue);
+}
+
+.terms {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--pry-color);
+}
+
+
+
+/* Media Query */
+
+@media (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-rows: 100vh;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 8%;
+    }
+
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .heading-text {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        width: 45%;
+    }
+
+    .registration-section {
+        padding: 48px 0;
+        width: 45%;
+    }
+    
+    input {
+        margin-bottom: 24px;
+    }
+
+    form {
+        padding: 52px 0;
+    }
+}
