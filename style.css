@@ -87,6 +87,7 @@ input {
     border: 1px solid var(--grayish-Blue);
     border-radius: 4px;
     font-weight: bold; 
+    outline: none;
 }
 
 input[type=submit] {
