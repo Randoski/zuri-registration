@@ -28,41 +28,37 @@
             </div>
 
             <!-- Form -->
-            <form action="">
-                <!-- First name -->
-                <div class="input-container">
-                    <input type="text" placeholder="First Name">
-                    <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
-                    <!-- <small>Error message</small> -->
-                </div>
+            <form action="" id="form">
 
-                <!-- Last name -->
-                <div class="input-container">
-                    <input type="text" placeholder="Last Name">
-                    <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
-                    <!-- <small>Error message</small> -->
-                </div>
+                 <!-- Form -->
+                 <form action="" id="form">
+                    <div class="input-container">
 
-                <!-- Email address -->
-                <div class="input-container">
-                    <input type="email" placeholder="Email Address">
+                    <!-- First name -->
+                    <input type="text" placeholder="First Name" id="first-name">
                     <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
-                    <!-- <small>Error message</small> -->
-                </div>
-
-                <!-- Password -->
-                <div class="input-container">
-                    <input type="password" placeholder="Password">
+                    <small id="first-name-error" class="error"></small>
+    
+                    <!-- Last name -->
+                    <input type="text" placeholder="Last Name" id="last-name">
                     <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
-                    <!-- <small>Error message</small> -->
-                </div>
-
-                <!-- Submit -->
-                <div class="input-container">
+                    <small id="last-name-error" class="error"></small>
+    
+                    <!-- Email address -->
+                    <input type="email" placeholder="Email Address" id="email">
+                    <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
+                    <small id="email-error" class="error"></small>
+    
+                    <!-- Password -->
+                    <input type="password" placeholder="Password" id="password">
+                    <!-- <img src="/Images/icon-error.svg" alt="error-icon"> -->
+                    <small id="password-error" class="error"></small>
+    
+                    <!-- Submit -->
                     <input type="submit" value="claim your free trail" class="pry-trial-btn">
+                <!-- Caveat -->
+                <p class="caveat">By clicking the button, you are agreeing to our <span><a href="#" class="terms">Terms and conditions</a></span></p>
                 </div>
-            <!-- Caveat -->
-            <p class="caveat">By clicking the button, you are agreeing to our <span><a href="#" class="terms">Terms and conditions</a></span></p>
             </form>
         </div>        
     </section>
