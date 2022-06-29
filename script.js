@@ -21,29 +21,19 @@ form.addEventListener('submit', (e) => {
             emailError.innerText = "Looks like this is not an email"
             passwordError.innerText = "Password cannot be empty"
             e.preventDefault();
-      }
-
-      else if(firstNameValue == "" || firstNameValue == null) {
+      } else if(firstNameValue == "" || firstNameValue == null) {
             firstNameError.innerText = "First Name cannot be empty"
             e.preventDefault();
-      } 
-
-      else if(lastNameValue == "" || lastNameValue == null) {
+      } else if(lastNameValue == "" || lastNameValue == null) {
             lastNameError.innerText = "Last Name cannot be empty"
             e.preventDefault();
-      } 
- 
-      else if(emailValue.length < 5 && emailValue.indexOf('@') < 0) {
+      } else if(emailValue.length < 5 && emailValue.indexOf('@') < 0) {
             emailError.innerText = "Looks like this is not an email"
             e.preventDefault();
-      } 
-    
-      else if(passwordValue == "" || passwordValue == null) {
+      } else if(passwordValue == "" || passwordValue == null) {
             passwordError.innerText = "Password cannot be empty"
             e.preventDefault();
-      } 
-
-      else {
+      } else {
             form.submit();
       }
 })
