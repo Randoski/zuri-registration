@@ -16,22 +16,30 @@ form.addEventListener('submit', (e) => {
       const passwordValue = password.value.trim().toLowerCase();
 
       if(firstNameValue == "" && lastNameValue == "" && emailValue == "" && passwordValue == "") {
-            firstNameError.innerText = "First Name cannot be empty"
-            lastNameError.innerText = "Last Name cannot be empty"
-            emailError.innerText = "Looks like this is not an email"
-            passwordError.innerText = "Password cannot be empty"
+            firstNameError.innerText = "First Name cannot be empty";
+            lastNameError.innerText = "Last Name cannot be empty";
+            emailError.innerText = "Looks like this is not an email";
+            passwordError.innerText = "Password cannot be empty";
+            document.querySelector("#first-name").style.border = "2px solid var(--pry-color)";
+            document.querySelector("#last-name").style.border = "2px solid var(--pry-color)";
+            document.querySelector("#email").style.border = "2px solid var(--pry-color)";
+            document.querySelector("#password").style.border = "2px solid var(--pry-color)";
             e.preventDefault();
       } else if(firstNameValue == "" || firstNameValue == null) {
-            firstNameError.innerText = "First Name cannot be empty"
+            firstNameError.innerText = "First Name cannot be empty";
+            document.querySelector("#first-name").style.border = "2px solid var(--pry-color)";
             e.preventDefault();
       } else if(lastNameValue == "" || lastNameValue == null) {
-            lastNameError.innerText = "Last Name cannot be empty"
+            lastNameError.innerText = "Last Name cannot be empty";
+            document.querySelector("#last-name").style.border = "2px solid var(--pry-color)";
             e.preventDefault();
       } else if(emailValue.length < 5 && emailValue.indexOf('@') < 0) {
-            emailError.innerText = "Looks like this is not an email"
+            emailError.innerText = "Looks like this is not an email";
+            document.querySelector("#email").style.border = "2px solid var(--pry-color)";
             e.preventDefault();
       } else if(passwordValue == "" || passwordValue == null) {
-            passwordError.innerText = "Password cannot be empty"
+            passwordError.innerText = "Password cannot be empty";
+            document.querySelector("#password").style.border = "2px solid var(--pry-color)";
             e.preventDefault();
       } else {
             form.submit();
